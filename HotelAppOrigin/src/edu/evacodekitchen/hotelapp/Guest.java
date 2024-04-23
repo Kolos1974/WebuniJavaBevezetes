@@ -1,7 +1,5 @@
 package edu.evacodekitchen.hotelapp;
 
-import java.util.Objects;
-
 public class Guest {
 
 	private String name;
@@ -37,24 +35,4 @@ public class Guest {
 		return nrOfDaysToRentTheRoom;
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(name, nrOfDaysToRentTheBicycle, nrOfDaysToRentTheRoom);
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Guest other = (Guest) obj;
-		return Objects.equals(name, other.name) && nrOfDaysToRentTheBicycle == other.nrOfDaysToRentTheBicycle
-				&& nrOfDaysToRentTheRoom == other.nrOfDaysToRentTheRoom;
-	}
-
-	
-	
 }

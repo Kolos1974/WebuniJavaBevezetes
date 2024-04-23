@@ -18,9 +18,9 @@ public class ListExercises {
 
 	public static int findMin(List<Integer> numbers) {
 		Integer min = numbers.get(0);
-		for (Integer integer : numbers) {
-			if (min > integer)  {
-				min = integer;
+		for (Integer number : numbers) {
+			if (min > number)  {
+				min = number;
 			}
 		}
 		return min;
@@ -28,9 +28,9 @@ public class ListExercises {
 
 	public static int findMax(List<Integer> numbers) {
 		Integer max = numbers.get(0);
-		for (Integer integer : numbers) {
-			if (max < integer)  {
-				max = integer;
+		for (Integer number : numbers) {
+			if (max < number)  {
+				max = number;
 			}
 		}
 		return max;
@@ -38,7 +38,7 @@ public class ListExercises {
 
 	public static List<Integer> findOddNumbers(List<Integer> numbers) {
 		// List<Integer> result = new List<Integer>();  // Ezt nem tudja inicializálni!
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 
 		for (int i=0; i < numbers.size() ; i++)
 		{
@@ -51,9 +51,9 @@ public class ListExercises {
 	}
 
 	public static Integer sumOfElements(List<Integer> numbers) {
-		Integer result = 0;
-		for (Integer integer : numbers) {
-			result += integer;
+		int result = 0;
+		for (Integer number : numbers) {
+			result += number;
 		}
 		return result;
 	}
